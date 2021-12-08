@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= <device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="fundo">
+      <!-- div para formatar o fundo -->
+
+      <h1>Lista Alunos</h1>
+      <div class="lista">
+        <!-- div para formatar o fundo -->
+        <div class="campos">
+          <!-- div campo criada para deixar uma ao lado da outra no arquivo css -->
+          <ul>
+            <h2>Nome</h2>
+            <li *ngFor="let nomes of nome">{{ nomes }}</li>
+          </ul>
+        </div>
+        <div class="campos">
+          <ul>
+            <h2>RU</h2>
+            <li *ngFor="let rus of ru">{{ rus }}</li>
+          </ul>
+        </div>
+        <div class="campos">
+          <ul>
+            <H2>Curso</H2>
+            <li *ngFor="let cursos of curso">{{ cursos }}</li>
+          </ul>
+        </div>
+        <div class="campos">
+          <ul>
+            <h2>Data de Nascimento</h2>
+            <li *ngFor="let dtnascs of dtnasc">{{ dtnascs }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<router-outlet></router-outlet>
